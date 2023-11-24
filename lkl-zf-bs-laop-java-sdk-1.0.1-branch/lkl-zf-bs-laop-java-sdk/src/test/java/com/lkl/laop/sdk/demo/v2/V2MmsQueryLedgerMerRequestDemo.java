@@ -1,0 +1,31 @@
+package com.lkl.laop.sdk.demo.v2;
+
+import com.lkl.laop.sdk.LKLSDK;
+import com.lkl.laop.sdk.demo.BaseCommonDemo;
+import com.lkl.laop.sdk.request.V2MmsQueryLedgerMerRequest;
+
+/**
+ * @author nxj
+ * @date 2023/8/21 15:57
+ * @description 商户分账信息查询
+ */
+public class V2MmsQueryLedgerMerRequestDemo extends BaseCommonDemo {
+    public static void main(String[] args) throws Exception {
+        // 1. 配置初始化
+        doInit();
+
+        //2. 装配数据
+        V2MmsQueryLedgerMerRequest req = new V2MmsQueryLedgerMerRequest();
+        req.setVersion("1.0");
+        req.setOrderNo("2023082214421898696034");
+        req.setOrgCode("1");
+        req.setMerInnerNo("4002023082110197011");
+        req.setMerCupNo("8222900701100Z1");
+
+        //3. 发送请求
+        String response = LKLSDK.httpPost(req);
+
+        //4. 响应
+        System.out.println(response);
+    }
+}
