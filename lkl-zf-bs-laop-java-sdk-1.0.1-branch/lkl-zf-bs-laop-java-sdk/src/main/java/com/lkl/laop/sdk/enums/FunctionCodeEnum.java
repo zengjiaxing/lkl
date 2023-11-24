@@ -33,6 +33,8 @@ public enum FunctionCodeEnum {
 
     API_V3_CCSS_COUNTER_ORDER_QUERY("api.v3.ccss.counter.order.query", "收银台订单查询"),
 
+    API_V3_CCSS_COUNTER_ORDER_CLOSE("api.v3.ccss.counter.order.close", "收银台订单关闭"),
+
     API_V3_SACS_CANCEL("api.v3.sacs.cancel", "订单分账撤销"),
 
     API_V3_SACS_FALLBACK("api.v3.sacs.fallback", "订单分账回退"),
