@@ -21,15 +21,16 @@ public class V2MmsApplyLedgerReceiverRequestDemo extends BaseCommonDemo {
         //2. 装配数据
         V2MmsApplyLedgerReceiverRequest req = new V2MmsApplyLedgerReceiverRequest();
         req.setVersion("1.0");
-        req.setOrderNo("20230821153025407888822");
-        req.setOrgCode("1950836");
-        req.setContactMobile("13728421998");
-        req.setReceiverName("账接收方测试008账接收方测试008");
-        req.setAcctCertificateNo("340102199003070774");
-        req.setAcctOpenBankCode("03050000");
-        req.setAcctOpenBankName("民生银行");
-        req.setAcctName("张三");
-        req.setAcctNo("6222020230110171117");
+        req.setOrderNo("20230821153025407882811");
+        req.setOrgCode("1");
+
+        req.setContactMobile("15659720037");
+        req.setReceiverName("wedcat");
+        req.setAcctCertificateNo("350521199908121516");
+        req.setAcctOpenBankCode("105397100984");
+        req.setAcctOpenBankName("中国建设银行股份有限公司惠安支行");
+        req.setAcctName("曾嘉兴");
+        req.setAcctNo("6217001830045975961");
         req.setAcctTypeCode("58");
         req.setAcctCertificateType("17");
         List<V2MmsApplyLedgerReceiverRequest.AttachInfo> attachList = new ArrayList<>();

@@ -1,6 +1,7 @@
 package com.lkl.laop.sdk.request;
 
 import com.lkl.laop.sdk.utils.JsonUtils;
+import sun.security.krb5.internal.PAData;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -16,12 +17,12 @@ import java.util.UUID;
 public abstract class V2CommRequest implements LklRequest {
 
     @Override
-    public String toBody() {
+    public  Map<String, Object> toBody() {
         Map<String, Object> param = new HashMap<>();
         param.put("reqId", UUID.randomUUID().toString().replace("-", ""));
         param.put("reqTime", new SimpleDateFormat("yyyyMMddHHmmss").format(new Date()));
         param.put("version", "2.0");
         param.put("reqData", this);
-        return JsonUtils.toJSONString(param);
+        return param;
     }
 }

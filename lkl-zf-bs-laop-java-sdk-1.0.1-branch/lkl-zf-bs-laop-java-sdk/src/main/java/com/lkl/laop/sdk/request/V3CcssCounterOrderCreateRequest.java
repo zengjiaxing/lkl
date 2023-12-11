@@ -102,6 +102,16 @@ public class V3CcssCounterOrderCreateRequest extends V3CommRequest {
     private Integer supportRepeatPay;
 
     /**
+     * 0:重复支付后不自动退货；1:重复支付后自动退货 （默认不送为0），注意：请详细了解字段场景后上送
+     *
+     * 需注意互斥条件：repeat_pay_auto_refund选择“1”重复支付后自动退货后，repeat_pay_notify仅支持选择“0”重复支付订单不通知
+     * C
+     * 默认0 不支持
+     */
+    @JsonProperty("repeat_pay_auto_refund")
+    private String repeatPayAutoRefund;
+
+    /**
      * 发起订单方的userId
      * C
      * 归属于channelId下的userId
@@ -303,6 +313,14 @@ public class V3CcssCounterOrderCreateRequest extends V3CommRequest {
 
     public void setSupportRepeatPay(Integer supportRepeatPay) {
         this.supportRepeatPay = supportRepeatPay;
+    }
+
+    public String getRepeatPayAutoRefund() {
+        return repeatPayAutoRefund;
+    }
+
+    public void setRepeatPayAutoRefund(String repeatPayAutoRefund) {
+        this.repeatPayAutoRefund = repeatPayAutoRefund;
     }
 
     public String getOutUserId() {

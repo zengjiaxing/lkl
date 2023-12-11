@@ -16,9 +16,9 @@ public class V3CcssCounterOrderQueryRequestDemo extends BaseCommonDemo {
 
         //2. 装配数据
         V3CcssCounterOrderQueryRequest req = new V3CcssCounterOrderQueryRequest();
-        req.setOutOrderNo("KFPT20230816160009228907299");
-        req.setMerchantNo("8222900701106PZ");
-        req.setChannelId("2021052614391");
+        req.setOutOrderNo("222ere22222422");
+        req.setMerchantNo("8221210594300JY");
+        //req.setChannelId("2021052614391");
 
         //3. 发送请求
         String response = LKLSDK.httpPost(req);

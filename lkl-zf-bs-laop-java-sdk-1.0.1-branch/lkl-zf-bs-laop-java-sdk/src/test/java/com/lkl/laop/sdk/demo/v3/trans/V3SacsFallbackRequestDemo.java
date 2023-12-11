@@ -18,14 +18,14 @@ public class V3SacsFallbackRequestDemo extends BaseCommonDemo {
         doInit();
 
         V3SacsFallbackRequest v3SacsFallbackRequest = new V3SacsFallbackRequest();
-        v3SacsFallbackRequest.setMerchantNo("82229005943096D");
-        v3SacsFallbackRequest.setOriginOutSeparateNo("72848874029489665216847386099008");
-        v3SacsFallbackRequest.setOutSeparateNo("99309535159529517424743080321778");
+        v3SacsFallbackRequest.setMerchantNo("8221210594300JY");
+        v3SacsFallbackRequest.setOriginOutSeparateNo("FZ737268195882684416");
+        v3SacsFallbackRequest.setOutSeparateNo("FZ737268195882684426");
         v3SacsFallbackRequest.setTotalAmt("1");
         v3SacsFallbackRequest.setFallbackReason("分账回退测试");
         List<V3SacsFallbackRequest.OriginRecvData> originRecvDatas = new ArrayList<>();
         V3SacsFallbackRequest.OriginRecvData originRecvData = new V3SacsFallbackRequest.OriginRecvData();
-        originRecvData.setRecvNo("SR2022120117001");
+        originRecvData.setRecvNo("SR2024000008703");
         originRecvData.setAmt("1");
         originRecvDatas.add(originRecvData);
         v3SacsFallbackRequest.setOriginRecvDatas(originRecvDatas);

@@ -18,11 +18,11 @@ public class V2MmsLedgerApplyBindRequestDemo extends BaseCommonDemo {
         //2. 装配数据
         V2MmsLedgerApplyBindRequest req = new V2MmsLedgerApplyBindRequest();
         req.setVersion("1.0");
-        req.setOrderNo("2023082214373584317716");
+        req.setOrderNo("2023082214373584317726");
         req.setOrgCode("1");
-        req.setMerInnerNo("4002023082110197011");
-        req.setMerCupNo("8222900581201PA");
-        req.setReceiverNo("SR2023081514001");
+        //req.setMerInnerNo("4002023082110197011");
+        req.setMerCupNo("8221210594300JY");
+        req.setReceiverNo("SR2024000008703");
         req.setRetUrl("https://5436i50a67.zicp.fun/account/applyBind/notify");
         req.setEntrustFileName("酒店供应商系统培训文档说明书.pdf");
         req.setEntrustFilePath("MMS/20230821/20230821095301-1c87bc71bdf64870a5359f032e3d40fd.pdf");

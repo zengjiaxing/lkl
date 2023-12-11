@@ -15,12 +15,12 @@ import com.lkl.laop.sdk.utils.JsonUtils;
 public  abstract class V3CommRequest implements LklRequest{
 
 
-	public String toBody() {
+	public Map<String, Object> toBody() {
 		Map<String, Object> param = new HashMap<>();
 		param.put("req_time", new SimpleDateFormat("yyyyMMddHHmmss").format(new Date()));
 		param.put("version", "3.0");
 		param.put("req_data", this);
-		return JsonUtils.toJSONString(param);
+		return param;
 	}
 
 }

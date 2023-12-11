@@ -63,7 +63,13 @@ public enum FunctionCodeEnum {
 
     API_V2_MMS_OPENAPI_LEDGER_APPLYUNBIND("api.v2.mms.openApi.ledger.applyUnBind", "分账关系解绑申请"),
 
-    API_V2_MMS_OPENAPI_ACTIVESETTLE_APPLY("api.v2.mms.openApi.activeSettle.apply", "商户开通主动结算业务")
+    API_V2_MMS_OPENAPI_ACTIVESETTLE_APPLY("api.v2.mms.openApi.activeSettle.apply", "商户开通主动结算业务"),
+
+    API_V2_LAEP_INDUSTRY_EWALLETWITHDRAW("api.v2.laep.industry.ewalletWithdraw", "账户提现"),
+
+    API_V2_LAEP_INDUSTRY_EWALLETWITHDRAWQUERY("api.v2.laep.industry.ewalletWithdrawQuery", "账户提现查询"),
+
+    API_V2_LAEP_INDUSTRY_EWALLETBALANCEQUERY("api.v2.laep.industry.ewalletBalanceQuery", "账户余额查询")
             ;
 
     private final String code;

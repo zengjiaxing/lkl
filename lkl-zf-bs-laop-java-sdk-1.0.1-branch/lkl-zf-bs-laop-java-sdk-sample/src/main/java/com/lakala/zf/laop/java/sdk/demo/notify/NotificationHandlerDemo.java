@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author nxj
@@ -23,8 +25,7 @@ public class NotificationHandlerDemo extends BaseCommonDemo {
 
         //验签并解析请求
         String body = LKLSDK.notificationHandle(request);
-        System.out.println("验签成功,请求body：" + body);
-
+        System.out.println("验签成功, ：" + body);
         //业务处理
 
 

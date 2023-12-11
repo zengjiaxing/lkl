@@ -16,9 +16,9 @@ public class V3SacsQueryRequestDemo extends BaseCommonDemo {
     	doInit();
 
         V3SacsQueryRequest v3SacsQueryRequest = new V3SacsQueryRequest();
-        v3SacsQueryRequest.setMerchantNo("8221210701101SB");
-        v3SacsQueryRequest.setSeparateNo("20230426770188000254207000");
-        v3SacsQueryRequest.setOutSeparateNo("153020230426173509288272000001");
+        v3SacsQueryRequest.setMerchantNo("8221210594300JY");
+        //v3SacsQueryRequest.setSeparateNo("20231211770188000289302000");
+        v3SacsQueryRequest.setOutSeparateNo("FZ737268195882684417");
         //响应信息
         String res = LKLSDK.httpPost(v3SacsQueryRequest);
         System.out.println(res);

@@ -11,7 +11,7 @@ import com.lkl.laop.sdk.exception.SDKException;
 public class BaseCommonDemo {
 
 	private static final String appId = "OP00000003"; // 拉卡拉appId
-	private static final String serialNo = "1752b7386f8"; // 你的证书序列号
+	private static final String serialNo = "00dfba8194c41b84cf"; // 你的证书序列号
 	/**
 	 * 商户私钥信息地址
 	 */

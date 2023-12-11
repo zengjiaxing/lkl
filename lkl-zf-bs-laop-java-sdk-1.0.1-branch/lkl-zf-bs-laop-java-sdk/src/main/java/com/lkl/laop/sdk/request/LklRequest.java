@@ -3,6 +3,8 @@ package com.lkl.laop.sdk.request;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.lkl.laop.sdk.enums.FunctionCodeEnum;
 
+import java.util.Map;
+
 public interface LklRequest {
 
 
@@ -19,5 +21,5 @@ public interface LklRequest {
 	 *转换为请求报文内容
 	 * @return
 	 */
-	String toBody();
+	Map<String, Object> toBody();
 }

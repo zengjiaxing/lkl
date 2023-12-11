@@ -16,19 +16,20 @@ public class V3CcssCounterOrderCreateRequestDemo extends BaseCommonDemo {
 
         //2. 装配数据
         V3CcssCounterOrderCreateRequest req = new V3CcssCounterOrderCreateRequest();
-        req.setOutOrderNo("KFPT20230816160009228907299");
-        req.setMerchantNo("8222900701106PZ");
-        req.setVposId("587305941625155584");
-        req.setChannelId("2021052614391");
-        req.setTotalAmount(1L);
+        req.setOutOrderNo("222ere22222422");
+        req.setMerchantNo("8221210594300JY");
+        req.setVposId("491612871013605376");
+        //req.setChannelId("2021052614391");
+        req.setTotalAmount(10L);
         req.setBusiMode("PAY");
-        req.setOrderEfficientTime("20230816170009");
+        req.setOrderEfficientTime("20231215170009");
         req.setNotifyUrl("http://run.mocky.io/v3/b02c9448-20a2-4ff6-a678-38ecab30161d");
         req.setSupportCancel(0);
         req.setSupportRefund(1);
         req.setSupportRepeatPay(1);
-        req.setBusiTypeParam("[{\"busi_type\":\"UPCARD\",\"params\":{\"crd_flg\":\"CRDFLG_D|CRDFLG_C|CRDFLG_OTH\"}},{\"busi_type\":\"SCPAY\",\"params\":{\"pay_mode\":\"WECHAT\",\"crd_flg\":\"CRDFLG_D\"}}]");
-        req.setCounterParam("{\"pay_mode\":\"ALIPAY\"}");
+        req.setSettleType("1");
+        //req.setBusiTypeParam("[{\"busi_type\":\"UPCARD\",\"params\":{\"crd_flg\":\"CRDFLG_D|CRDFLG_C|CRDFLG_OTH\"}},{\"busi_type\":\"SCPAY\",\"params\":{\"pay_mode\":\"WECHAT\",\"crd_flg\":\"CRDFLG_D\"}}]");
+        //req.setCounterParam("{\"pay_mode\":\"ALIPAY\"}");
         req.setOrderInfo("测试");
 
         //3. 发送请求

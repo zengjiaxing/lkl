@@ -6,6 +6,7 @@ import com.lkl.laop.sdk.exception.SDKExceptionEnums;
 import com.lkl.laop.sdk.notification.NotificationHandler;
 import com.lkl.laop.sdk.request.LklRequest;
 import com.lkl.laop.sdk.utils.FileUtils;
+import com.lkl.laop.sdk.utils.JsonUtils;
 import com.lkl.laop.sdk.utils.PemUtil;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.http.HttpEntity;
@@ -25,6 +26,7 @@ import java.nio.charset.StandardCharsets;
 import java.security.PrivateKey;
 import java.security.cert.X509Certificate;
 import java.util.ArrayList;
+import java.util.Map;
 import java.util.Objects;
 import java.util.Properties;
 
@@ -205,9 +207,32 @@ public class LKLSDK {
             requestUrl.append("/");
         }
         requestUrl.append(url);
-        String body = request.toBody();
+        Map<String, Object> param = request.toBody();
+        String body = JsonUtils.toJSONString(param);
         String response = httpPost(requestUrl.toString(), body);
         return response;
+    }
+
+    /**
+     * SDK post 请求
+     *
+     * @param request
+     * @return
+     * @throws SDKException
+     */
+    public static Map<String, Object> httpPostForRecord(LklRequest request) throws SDKException {
+        FunctionCodeEnum fcode = request.getFunctionCode();
+        String url = fcode.getUrl();
+        StringBuilder requestUrl = new StringBuilder(sdkServerUrl);
+        if (!sdkServerUrl.endsWith("/")) {
+            requestUrl.append("/");
+        }
+        requestUrl.append(url);
+        Map<String, Object> param = request.toBody();
+        String body = JsonUtils.toJSONString(param);
+        String response = httpPost(requestUrl.toString(), body);
+        param.put("response", response);
+        return param;
     }
 
     /**

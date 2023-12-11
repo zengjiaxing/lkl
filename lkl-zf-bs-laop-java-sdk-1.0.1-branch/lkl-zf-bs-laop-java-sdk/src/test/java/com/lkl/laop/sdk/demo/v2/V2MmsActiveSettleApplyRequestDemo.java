@@ -19,8 +19,8 @@ public class V2MmsActiveSettleApplyRequestDemo extends BaseCommonDemo {
         req.setVersion("2.0");
         req.setOrderNo("20230821153025407888851");
         req.setOrgCode("1");
-        req.setMerInnerNo("4002021033012340711");
-        req.setMerCupNo("8222900701100Z1");
+        //req.setMerInnerNo("4002021033012340711");
+        req.setMerCupNo("8221210594300JY");
 
         //3. 发送请求
         String response = LKLSDK.httpPost(req);

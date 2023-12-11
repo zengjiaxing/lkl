@@ -21,8 +21,9 @@ public class V2MmsModifyLedgerMerRequestDemo extends BaseCommonDemo {
         req.setVersion("1.0");
         req.setOrderNo("2023082214373584317715");
         req.setOrgCode("1");
-        req.setMerInnerNo("4002023082110197011");
-        req.setMerCupNo("8222900581201PA");
+        //req.setMerInnerNo("8221210594300JY");
+        req.setSplitLowestRatio("0");
+        req.setMerCupNo("8221210594300JY");
         req.setRetUrl("https://5436i50a67.zicp.fun/account/applyBind/notify");
         //3. 发送请求
         String response = LKLSDK.httpPost(req);

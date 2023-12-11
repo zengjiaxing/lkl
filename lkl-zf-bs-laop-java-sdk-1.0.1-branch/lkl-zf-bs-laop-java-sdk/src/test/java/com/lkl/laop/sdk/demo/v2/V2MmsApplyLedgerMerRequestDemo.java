@@ -20,8 +20,8 @@ public class V2MmsApplyLedgerMerRequestDemo extends BaseCommonDemo {
         req.setVersion("2.0");
         req.setOrderNo("20230821153025407888851");
         req.setOrgCode("1");
-        req.setMerInnerNo("4002021033012340711");
-        req.setMerCupNo("8222900701100Z1");
+        //req.setMerInnerNo("4002021033012340711");
+        req.setMerCupNo("8221210594300JY");
         req.setContactMobile("13790147644");
         req.setSplitLowestRatio("0.33");
         req.setSplitEntrustFileName("授权委托书1.pdf");

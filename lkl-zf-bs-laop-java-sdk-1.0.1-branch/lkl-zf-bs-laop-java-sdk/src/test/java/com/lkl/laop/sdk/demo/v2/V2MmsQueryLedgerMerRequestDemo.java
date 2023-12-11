@@ -19,8 +19,8 @@ public class V2MmsQueryLedgerMerRequestDemo extends BaseCommonDemo {
         req.setVersion("1.0");
         req.setOrderNo("2023082214421898696034");
         req.setOrgCode("1");
-        req.setMerInnerNo("4002023082110197011");
-        req.setMerCupNo("8222900701100Z1");
+        //req.setMerInnerNo("4002023082110197011");
+        req.setMerCupNo("8221210594300JY");
 
         //3. 发送请求
         String response = LKLSDK.httpPost(req);

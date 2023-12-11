@@ -21,18 +21,16 @@ public class V2MmsModifyLedgerReceiverRequestDemo extends BaseCommonDemo {
         //2. 装配数据
         V2MmsModifyLedgerReceiverRequest req = new V2MmsModifyLedgerReceiverRequest();
         req.setVersion("1.0");
-        req.setOrderNo("2022052314154312973010");
+        req.setOrderNo("20230821153025407882811");
         req.setOrgCode("1");
-        req.setContactMobile("13728421998");
-        req.setReceiverName("账接收方测试008账接收方测试008");
-        req.setAcctOpenBankCode("03050000");
-        req.setAcctOpenBankName("民生银行");
-        req.setAcctNo("6222020230110171117");
+        req.setContactMobile("15659720037");
+        req.setReceiverName("wedcat_update");
+        req.setAcctOpenBankCode("105397100984");
+        req.setAcctOpenBankName("中国建设银行股份有限公司惠安支行");
+        req.setAcctNo("6217001830045975961");
         req.setAcctTypeCode("58");
-        req.setReceiverNo("SR2023081514001");
-        req.setReceiverName("分账接收方20220523768");
-        req.setAcctOpenBankCode("102100000030");
-        req.setAcctOpenBankName("中国工商银行股份有限公司北京市分行营业部");
+        req.setReceiverNo("SR2024000008703");
+        //req.setReceiverName("分账接收方20220523768");
         req.setAcctClearBankCode("102100099996");
         List<V2MmsModifyLedgerReceiverRequest.AttachInfo> attachList = new ArrayList<>();
         V2MmsModifyLedgerReceiverRequest.AttachInfo attachInfo = new V2MmsModifyLedgerReceiverRequest.AttachInfo();
