@@ -5,7 +5,9 @@ package com.lkl.laop.sdk.enums;
  */
 public enum FunctionCodeEnum {
 
-    /** V3接口 */
+    /**
+     * V3接口
+     */
 
     API_V3_LABS_TRADE_QUERY("api.v3.labs.query.tradequery", "聚合扫码-交易查询"),
 
@@ -47,7 +49,9 @@ public enum FunctionCodeEnum {
 
     API_V3_SACS_BALANCESEPARATEQUERY("api.v3.sacs.balanceSeparateQuery", "余额分账结果查询"),
 
-    /** V2接口 */
+    /**
+     * V2接口
+     */
 
     API_V2_MMS_OPENAPI_LEDGER_APPLYLEDGERMER("api.v2.mms.openApi.ledger.applyLedgerMer", "商户分账业务开通申请"),
 
@@ -69,8 +73,11 @@ public enum FunctionCodeEnum {
 
     API_V2_LAEP_INDUSTRY_EWALLETWITHDRAWQUERY("api.v2.laep.industry.ewalletWithdrawQuery", "账户提现查询"),
 
-    API_V2_LAEP_INDUSTRY_EWALLETBALANCEQUERY("api.v2.laep.industry.ewalletBalanceQuery", "账户余额查询")
-            ;
+    API_V2_LAEP_INDUSTRY_EWALLETBALANCEQUERY("api.v2.laep.industry.ewalletBalanceQuery", "账户余额查询"),
+
+    API_V2_MMS_OPENAPI_CARDBIN("api.v2.mms.openApi.cardBin", "卡BIN查询"),
+
+    API_V2_MMS_OPENAPI_UPLOADFILE("api.v2.mms.openApi.uploadFile", "附件上传");
 
     private final String code;
 
