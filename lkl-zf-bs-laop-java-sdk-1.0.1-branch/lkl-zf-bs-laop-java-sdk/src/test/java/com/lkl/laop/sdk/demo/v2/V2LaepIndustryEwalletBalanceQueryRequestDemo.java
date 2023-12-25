@@ -13,7 +13,7 @@ public class V2LaepIndustryEwalletBalanceQueryRequestDemo extends BaseCommonDemo
         V2LaepIndustryEwalletBalanceQueryRequest request = new V2LaepIndustryEwalletBalanceQueryRequest();
         request.setOrgNo("1");
         request.setMerchantNo("8221210594300JY");
-        request.setPayType("01");
+        request.setPayType("03");
 
 
 

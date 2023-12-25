@@ -12,11 +12,11 @@ public class V2LaepIndustryEwalletWithdrawRequestDemo extends BaseCommonDemo {
 
         V2LaepIndustryEwalletWithdrawRequest request = new V2LaepIndustryEwalletWithdrawRequest();
         request.setOrgNo("1");
-        request.setMerchantNo("8221210594300JY");
+        request.setMerchantNo("SR2024000008703");
         request.setDrawAmt("0.01");
         request.setDrawMode("D0");
-        //request.setMerOrderNo("1111111111123333333333");
-        request.setPayType("01");
+        request.setMerOrderNo("1111111111123333333333");
+        request.setPayType("04");
 
 
 

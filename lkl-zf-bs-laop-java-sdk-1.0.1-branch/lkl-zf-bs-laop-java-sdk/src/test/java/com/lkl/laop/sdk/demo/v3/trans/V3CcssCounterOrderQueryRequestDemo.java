@@ -16,8 +16,8 @@ public class V3CcssCounterOrderQueryRequestDemo extends BaseCommonDemo {
 
         //2. 装配数据
         V3CcssCounterOrderQueryRequest req = new V3CcssCounterOrderQueryRequest();
-        req.setOutOrderNo("222ere22222422");
-        req.setMerchantNo("8221210594300JY");
+        req.setOutOrderNo("343434345446");
+        req.setMerchantNo("8222900701106PZ");
         //req.setChannelId("2021052614391");
 
         //3. 发送请求

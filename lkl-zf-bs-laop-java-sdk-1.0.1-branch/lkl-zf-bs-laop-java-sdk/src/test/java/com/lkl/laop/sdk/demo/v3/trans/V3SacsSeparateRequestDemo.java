@@ -21,9 +21,9 @@ public class V3SacsSeparateRequestDemo extends BaseCommonDemo {
 
         V3SacsSeparateRequest v3SacsSeparateRequest = new V3SacsSeparateRequest();
         v3SacsSeparateRequest.setMerchantNo("8221210594300JY");
-        v3SacsSeparateRequest.setLogNo("66210311396387");
-        v3SacsSeparateRequest.setLogDate("20231211");
-        v3SacsSeparateRequest.setOutSeparateNo("FZ7371122195881234420");
+        v3SacsSeparateRequest.setLogNo("66210311538844");
+        v3SacsSeparateRequest.setLogDate("20231220");
+        v3SacsSeparateRequest.setOutSeparateNo("FZ7371122195881000000");
         v3SacsSeparateRequest.setTotalAmt("2");
         v3SacsSeparateRequest.setLklOrgNo("1");
         v3SacsSeparateRequest.setCalType("0");
@@ -35,7 +35,7 @@ public class V3SacsSeparateRequestDemo extends BaseCommonDemo {
         recvData.setSeparateValue("2");
         recvDatas.add(recvData);
         v3SacsSeparateRequest.setRecvDatas(recvDatas);
-      //响应信息
+        //响应信息
         String res = LKLSDK.httpPost(v3SacsSeparateRequest);
         System.out.println(res);
     }

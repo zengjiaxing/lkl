@@ -19,7 +19,7 @@ public class V2MmsModifyLedgerMerRequestDemo extends BaseCommonDemo {
         //2. 装配数据
         V2MmsModifyLedgerMerRequest req = new V2MmsModifyLedgerMerRequest();
         req.setVersion("1.0");
-        req.setOrderNo("2023082214373584317715");
+        req.setOrderNo("2023082214373584315515");
         req.setOrgCode("1");
         //req.setMerInnerNo("8221210594300JY");
         req.setSplitLowestRatio("0");

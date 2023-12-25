@@ -16,13 +16,13 @@ public class V3CcssCounterOrderCreateRequestDemo extends BaseCommonDemo {
 
         //2. 装配数据
         V3CcssCounterOrderCreateRequest req = new V3CcssCounterOrderCreateRequest();
-        req.setOutOrderNo("222ere22222422");
-        req.setMerchantNo("8221210594300JY");
-        req.setVposId("491612871013605376");
+        req.setOutOrderNo("343434345446");
+        req.setMerchantNo("8222900701106PZ");
+        req.setVposId("587305941625155584");
         //req.setChannelId("2021052614391");
-        req.setTotalAmount(10L);
+        req.setTotalAmount(5L);
         req.setBusiMode("PAY");
-        req.setOrderEfficientTime("20231215170009");
+        req.setOrderEfficientTime("20231228170009");
         req.setNotifyUrl("http://run.mocky.io/v3/b02c9448-20a2-4ff6-a678-38ecab30161d");
         req.setSupportCancel(0);
         req.setSupportRefund(1);

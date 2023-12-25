@@ -8,7 +8,7 @@ import com.lkl.laop.sdk.enums.FunctionCodeEnum;
  * @date 2023/12/11 11:07
  * @description 账户提现查询
  */
-public class V2LaepIndustryEwalletWithdrawQueryRequest extends V2CommRequest {
+public class V2LaepIndustryEwalletWithdrawQueryRequest extends V2LeapRequest {
 
 
 

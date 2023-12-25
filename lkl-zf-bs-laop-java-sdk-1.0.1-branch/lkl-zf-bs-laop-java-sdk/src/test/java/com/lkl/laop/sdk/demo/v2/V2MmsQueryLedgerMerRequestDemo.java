@@ -17,7 +17,7 @@ public class V2MmsQueryLedgerMerRequestDemo extends BaseCommonDemo {
         //2. 装配数据
         V2MmsQueryLedgerMerRequest req = new V2MmsQueryLedgerMerRequest();
         req.setVersion("1.0");
-        req.setOrderNo("2023082214421898696034");
+        req.setOrderNo("2023082214421898296034");
         req.setOrgCode("1");
         //req.setMerInnerNo("4002023082110197011");
         req.setMerCupNo("8221210594300JY");

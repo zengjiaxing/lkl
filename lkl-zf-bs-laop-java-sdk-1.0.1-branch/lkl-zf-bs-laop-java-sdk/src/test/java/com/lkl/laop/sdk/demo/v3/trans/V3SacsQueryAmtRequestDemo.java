@@ -16,8 +16,8 @@ public class V3SacsQueryAmtRequestDemo extends BaseCommonDemo{
 
         V3SacsQueryAmtRequest v3SacsQueryAmtRequest = new V3SacsQueryAmtRequest();
         v3SacsQueryAmtRequest.setMerchantNo("8221210594300JY");
-        v3SacsQueryAmtRequest.setLogNo("66210311396387");
-        v3SacsQueryAmtRequest.setLogDate("20231211");
+        v3SacsQueryAmtRequest.setLogNo("66210311538844");
+        v3SacsQueryAmtRequest.setLogDate("20231220");
       //响应信息
         String res = LKLSDK.httpPost(v3SacsQueryAmtRequest);
         System.out.println(res);
